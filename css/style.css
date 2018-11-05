@@ -1,0 +1,504 @@
+@import "https://fonts.googleapis.com/css?family=Lato";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  overflow-x: hidden;
+  color: #ffffff;
+  font-family: "Flamenco", cursive;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/denmark.jpg");
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-row {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0px;
+  clear: both;
+}
+
+.nav-logo {
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 20px;
+}
+
+.nav-main {
+  float: right;
+  margin-top: 60px;
+}
+
+.nav-main li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 40px;
+}
+
+.nav-main li a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100px;
+  padding: 5px 0;
+}
+
+.nav-main li a:hover {
+  border-bottom: 2px solid #e01616;
+}
+
+.main-content-header {
+  width: 1180px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 240%;
+  word-spacing: 5px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-shadow: 1px 1px 1px #e01616;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: lighter;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 200px;
+  transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full {
+  background-color: #e01616;
+  color: #fff;
+  margin-right: 15px;
+  border: 1px solid #fff;
+}
+
+.btn-full1 {
+  background-color: #e01616;
+  color: #fff;
+  margin-right: 15px;
+  border: 1px solid #fff;
+}
+
+.btn-full:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000000;
+  cursor: pointer;
+}
+
+.btn-full1:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000000;
+  cursor: pointer;
+}
+
+.colorchange {
+  animation: colorchangecake 1s infinite;
+}
+
+@keyframes colorchangecake {
+  0% {
+    color: whitesmoke;
+  }
+
+  25% {
+    color: #e01616;
+  }
+
+  50% {
+    color: white;
+  }
+
+  100% {
+    color: #e01616;
+  }
+}
+
+.mobile-icon {
+  display: none;
+}
+/* Benefit section */
+.benefits-section {
+  font-family: "Lato", sans-serif;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.benefits-title {
+  font-size: 3em;
+  margin-bottom: 60px;
+  color: #363638;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-container {
+  max-width: 335px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.service-title {
+  font-size: 1.5em;
+  margin: 25px 0;
+  color: #424244;
+}
+
+.service-icon-container {
+  width: 80px;
+  height: 80px;
+  margin: 5% auto;
+  background: linear-gradient(to right, rgb(228, 110, 109), rgb(251, 223, 115));
+  border-radius: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.service-icon-container::before {
+  font-family: FontAwesome, sans-serif;
+  font-size: 2em;
+
+  color: #ffffff;
+  position: absolute;
+}
+
+.best-service-icon::before {
+  content: "\f2bb";
+  top: 22px;
+  left: 18px;
+}
+
+.utensils-icon::before {
+  content: "\f0f5";
+  top: 22px;
+  left: 25px;
+}
+
+.database-icon::before {
+  content: "\f1c0";
+  top: 22px;
+  left: 24px;
+}
+
+.service-info {
+  color: #828587;
+  font-size: 20px;
+  font-weight: 100;
+}
+/* Introducing section */
+.introduction-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/copenhagen3.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.introduction-title-container,
+.travel-title-container {
+  padding: 150px 0;
+  text-align: center;
+  color: #e01616;
+  text-shadow: 1px 1px #fff;
+}
+
+.travel-title-container {
+  width: 1368px;
+}
+
+.introduction-title,
+.travel-title {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.introduction-subtitle,
+.travel-subtitle {
+  margin: 0 auto 50px;
+  font-size: 0.9em;
+  font-weight: 100;
+}
+
+.introduction-subtitle {
+  max-width: 600px;
+  color: #fff;
+  text-shadow: 1px 1px #191919;
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.introduction-button {
+  font-size: 0.8em;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid #ffffff;
+  background-color: #e01616;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.introduction-button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #000000;
+  cursor: pointer;
+}
+/* Main */
+main {
+  font-family: "Lato", sans-serif;
+  height: 600px;
+}
+.first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.first .first-article {
+  background: url("../img/castle.jpg") center;
+  width: 400px;
+  height: 400px;
+}
+.first-article .article-title {
+  position: relative;
+  top: 40%;
+  left: 5%;
+  font-size: 29px;
+  text-shadow: 1px 1px #bd1e1e;
+  word-wrap: break-word;
+}
+.first .second-article {
+  background: url("../img/tivoli.jpg") center;
+  width: 400px;
+  height: 400px;
+}
+.second-article .article-title {
+  position: relative;
+  top: 40%;
+  left: 5%;
+  font-size: 29px;
+  text-shadow: 1px 1px #bd1e1e;
+  word-wrap: break-word;
+}
+.first .third-article {
+  background: url("../img/aarhus.jpg") center;
+  width: 400px;
+  height: 400px;
+}
+.third-article .article-title {
+  position: relative;
+  top: 40%;
+  left: 5%;
+  font-size: 30px;
+  text-shadow: 1px 1px #bd1e1e;
+  word-wrap: break-word;
+}
+.section-header {
+  height: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.section-header h2,
+p {
+  color: #bd1e1e;
+  position: relative;
+  top: 30px;
+}
+.article-button-first,
+.article-button-second {
+  position: relative;
+  top: 190px;
+  left: 25px;
+  font-size: 0.8em;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid #bd1e1e;
+  background-color: #bd1e1e;
+  color: #ffffff;
+}
+.article-button-third {
+  position: relative;
+  top: 190px;
+  left: 80px;
+  font-size: 0.8em;
+  padding: 10px 25px;
+  border-radius: 20px;
+  border: 2px solid #bd1e1e;
+  background-color: #bd1e1e;
+  color: #ffffff;
+}
+
+article button:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #bd1e1e;
+  cursor: pointer;
+}
+.first-article:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../img/castle.jpg") no-repeat center;
+}
+.second-article:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../img/tivoli.jpg") no-repeat center;
+}
+.third-article:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../img/aarhus.jpg") no-repeat center;
+}
+
+/* Footer */
+footer {
+  padding: 10px 20px;
+  background: #191919;
+  height: 100px;
+}
+
+.footer-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.footer-list {
+  float: right;
+}
+
+.footer-list-item {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.footer-item-link {
+  display: block;
+  width: 45px;
+  height: 45px;
+  background: #303030;
+  border-radius: 100%;
+  position: relative;
+}
+
+.footer-item-link:hover {
+  background: #686868;
+  color: #000;
+}
+
+.footer-item-link::before {
+  font-family: FontAwesome, sans-serif;
+  font-size: 1.3em;
+  color: #ffffff;
+  position: absolute;
+}
+
+.facebook-link::before {
+  content: "\f09a";
+  top: 10px;
+  left: 14px;
+}
+
+.twitter-link::before {
+  content: "\f099";
+  top: 10px;
+  left: 11px;
+}
+
+.google-plus-link::before {
+  content: "\f0d5";
+  top: 9px;
+  left: 7px;
+}
+
+.linkedin-link::before {
+  content: "\f0e1";
+  top: 8px;
+  left: 12px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1180px) {
+  .main-content-header {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+@media only screen and (max-width: 998px) {
+  h1 {
+    font-size: 200%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 180%;
+  }
+
+  .nav-main {
+    display: none;
+  }
+
+  .mobile-icon {
+    display: inline-block;
+    color: #fff;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
+
+  .nav-main {
+    float: left;
+  }
+
+  .nav-main li {
+    display: block;
+    margin-top: 10px;
+  }
+}
+@media all and (max-width: 512px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .btn-full {
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 140%;
+    margin-top: 10px;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+}
